@@ -1,34 +1,47 @@
-<div>
-  <mat-toolbar color="primary">
-    <span><mat-icon>mood</mat-icon></span>
+<mat-toolbar color="primary">
+  <span><mat-icon>mood</mat-icon></span>
 
-    <span>Yay, Material in Angular 2!</span>
+  <span>Yay, Material in Angular 2!</span>
 
-    <button mat-icon-button [mat-menu-trigger-for]="menu">
-      <mat-icon>more_vert</mat-icon>
-    </button>
-  </mat-toolbar>
-  <mat-menu x-position="before" #menu="matMenu">
-    <button mat-menu-item>Option 1</button>
-    <button mat-menu-item>Option 2</button>
-  </mat-menu>
+  <button mat-icon-button [mat-menu-trigger-for]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+</mat-toolbar>
+<mat-menu x-position="before" #menu="matMenu">
+  <button mat-menu-item>Option 1</button>
+  <button mat-menu-item>Option 2</button>
+</mat-menu>
 
-  <mat-card>
-
-    <h1>Posts</h1>
-
-  </mat-card>
-  <mat-card>
-    <button mat-button>All</button>
-    <button mat-raised-button>Of</button>
-    <button mat-raised-button color="primary">The</button>
-    <button mat-raised-button color="accent">Buttons</button>
-  </mat-card>
-
-  <span class="done">
-    <button mat-fab>
-      <mat-icon>check circle</mat-icon>
-    </button>
-  </span>
+<div class="content-margin">
+  <div fxLayout="row">
+    <div fxFlex="66%" style="background-color: orange;">
+      <p>
+        Add new Material modules you intend to use under <code>material.module.ts</code>.
+      </p>
+      <p>
+        Find the Material Icon List <a href="https://material.io/icons/" target="_blank">here</a>.
+      </p>
+      <p>
+        Run the following command to pull the Docker image:
+        <code>docker pull duluca/angular4-material2-starter</code>
+      </p>
+    </div>
+    <div fxFlex="34%" style="background-color: lightgray;">
+      <p>
+        Learn about Angular Flex Layout <a href="https://github.com/angular/flex-layout/wiki" target="_blank">here</a>.
+      </p>
+    </div>
+  </div>
 </div>
 
+<mat-card>
+
+  <h1>Posts</h1>
+
+</mat-card>
+<mat-card>
+  <button mat-button>All</button>
+  <button mat-raised-button>Of</button>
+  <button mat-raised-button color="primary">The</button>
+  <button mat-raised-button color="accent">Buttons</button>
+</mat-card>
